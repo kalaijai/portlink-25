@@ -31,7 +31,7 @@ function handleSubmit(event) {
     return false;
   }
 
-  // 👉 CHANGE THIS TO THE EMAIL WHERE YOU WANT TO RECEIVE MESSAGES
+  // 👉 CHANGE THIS TO YOUR REAL EMAIL
   const toEmail = "yourmail@example.com";
 
   const subject = encodeURIComponent("Portfolio Contact from " + name);
@@ -41,7 +41,7 @@ function handleSubmit(event) {
     "\n\nMessage:\n" + message
   );
 
-  // Opens the user's email app (Gmail/Outlook/etc.) with pre-filled mail
+  // Opens the user's email app with pre-filled mail
   window.location.href = `mailto:${toEmail}?subject=${subject}&body=${body}`;
 
   status.textContent = "Opening your email app…";

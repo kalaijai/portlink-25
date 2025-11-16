@@ -87,9 +87,9 @@ a {
 
 .logo span {
   background: linear-gradient(120deg, #6366f1, #ec4899);
-  -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent; /* Required for Chrome/Safari */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 
@@ -143,10 +143,9 @@ a {
 
 .hero-text h1 span {
   background: linear-gradient(120deg, #6366f1, #ec4899);
-  background-clip: text;               /* Standard property */
-  -webkit-background-clip: text;       /* For Chrome, Edge, Safari */
-  -webkit-text-fill-color: transparent;/* Required for gradient text */
-  color: transparent;                  /* Fallback */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 
@@ -301,6 +300,35 @@ a {
   color: #e5e7eb;
 }
 
+/* EDUCATION */
+.education-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.education-card h3 {
+  margin-bottom: 6px;
+}
+
+.edu-college {
+  color: #cbd5f5;
+  font-size: 0.92rem;
+}
+
+.edu-duration {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin: 4px 0;
+}
+
+.edu-mark {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
 /* PROJECTS */
 .projects-grid {
   margin-top: 24px;
@@ -424,34 +452,6 @@ a {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
-}
-/* EDUCATION */
-.education-grid {
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
-}
-
-.education-card h3 {
-  margin-bottom: 6px;
-}
-
-.edu-college {
-  color: #cbd5f5;
-  font-size: 0.92rem;
-}
-
-.edu-duration {
-  font-size: 0.85rem;
-  color: #9ca3af;
-  margin: 4px 0;
-}
-
-.edu-mark {
-  margin-top: 6px;
-  font-size: 0.9rem;
-  color: #e5e7eb;
 }
 
 /* RESPONSIVE */
